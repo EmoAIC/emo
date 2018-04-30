@@ -16,12 +16,16 @@
   
 function understand(arr) {
 var words = arr.split(" ")
+var sents = ''
 for (var i = 0; i < words.length; i++) {
   if (vocab[words[i]] !== undefined) {
-  alert(vocab[words[i]])
+  sents += vocab[words[i]] + ' '
   } else {
     alert(words[i])
   }
  }
+  if (i == words.length - 1) {
+    alert(sents)
+  }
 }
 </script>
