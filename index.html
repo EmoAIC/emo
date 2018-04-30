@@ -10,18 +10,15 @@
   
   var vocab = {
     hi: "friendlygreeting",
-    hi_syn: "hello",
     hello: 'friendlygreeting',
-    hello_syn: 'hi',
     calculator: "noun"
 }
   
 function understand(arr) {
 var words = arr.split(" ")
-alert(words)
 for (var i = 0; i < words.length; i++) {
   if (vocab[words[i]] !== undefined) {
-  alert(vocab[words[i]+"_syn"])
+  alert(vocab[words[i]])
   } else {
     alert(words[i])
   }
