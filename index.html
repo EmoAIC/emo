@@ -18,12 +18,12 @@ function understand(arr) {
 var words = arr.split(" ")
 var sents = ''
 for (var i = 0; i < words.length; i++) {
+  if (i == words.length - 1) {
+    alert(sents)
+    return true;
+  }
   if (vocab[words[i]] !== undefined) {
   sents += vocab[words[i]] + ' ';
-    if (i == words.length - 1) {
-      return true
-    alert(sents)
-    }
   } else {
     alert(words[i])
   }
