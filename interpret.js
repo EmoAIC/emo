@@ -1,4 +1,11 @@
 function understand(arr) {
 words = arr.split(" ")
-alert(words)
+for (var i = 0; i < words.length; i++) {
+  alert(vocab[words[i]])
+}
+
+var vocab = {
+"hi": "friendlygreeting"
+"hello": "friendlygreeting"
+"calculator": "noun"
 }
