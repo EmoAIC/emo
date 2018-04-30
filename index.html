@@ -14,13 +14,19 @@
     hello: ['greeting', 'friendly'],
     run: ['verb', 'singular', 'movement'],
     runs: ['verb', 'plural', 'movement'],
+    calculator: ['noun']
 }
   
 function understand(arr) {
 var words = arr.split(" ")
 for (var i = 0; i < words.length; i++) {
   if (vocab[words[i]] !== undefined) {
-   alert(vocab[words[i]])
+   if (sub == undefined && vocab[words[i]].includes('noun') {
+       var sub = words[i];
+       alert(sub)
+    } else {
+      alert('Not subject' + vocab[words[i]])
+    }
   } else {
     alert(words[i])
   }
