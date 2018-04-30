@@ -12,7 +12,7 @@
   }
   
   window.onload = function() {
-    document.getElementById('messages') += "<span class='emo'>"+express(["greeting"])+"</span>";
+    document.getElementById('messages').innerHTML += "<span class='emo'>"+express(["greeting"])+"</span>";
   }
   
   var vocab = {
@@ -31,7 +31,7 @@ var words = arr.split(" ")
 var sent = ""
 for (var i = 0; i < words.length; i++) {
   if (i == words.length - 1) {
-  document.getElementById('messages') += "<span class='emo'>"+sent+"</span>";
+  document.getElementById('messages').innerHTML += "<span class='emo'>"+sent+"</span>";
   } else {
   if (vocab[words[i]] !== undefined) {
     sent += vocab[words[i]];
@@ -42,7 +42,7 @@ for (var i = 0; i < words.length; i++) {
       alert('Not subject: ' + vocab[words[i]])
     }
   } else {
-    sent += vocab[words[i]];
+    sent += words[i];
     alert("Word not known yet")
    }
   }
