@@ -4,6 +4,10 @@
 <input class='form-control' onchange='understand(this.value)'>
 </div>
 <script>
+  window.onerror = function(msg) {
+    alert(msg)
+  }
+  
   var vocab = {
     hi: "friendlygreeting"
     hello: 'friendlygreeting'
@@ -21,9 +25,4 @@ for (var i = 0; i < words.length; i++) {
   }
  }
 }
-  
-  
-  window.onerror = function(msg) {
-    alert(msg)
-  }
 </script>
