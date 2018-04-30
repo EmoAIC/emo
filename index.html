@@ -28,13 +28,13 @@
   
 function understand(arr) {
 var words = arr.split(" ")
-if (words.length == 1) {
+if (words.length == 1 vocab[arr] !== undefined) {
   var sent = arr;
 } else {
 var sent = ""
 }
 for (var i = 0; i < words.length; i++) {
-  if (i == words.length - 1) {
+  if (i == words.length - 1 && ) {
   document.getElementById('messages').innerHTML += "<span class='you'>"+sent+"</span><br><br><br>";
   } else {
   if (vocab[words[i]] !== undefined) {
