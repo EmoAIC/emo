@@ -1,4 +1,4 @@
-.emo {
+.you {
   min-width: 100px;
   float: right;
   border-top-left-radius: 15px;
@@ -14,7 +14,7 @@
   color: white;
 }
 
-.you {
+.send {
   min-width: 100px;
   float: left;
   border-top-left-radius: 15px;
