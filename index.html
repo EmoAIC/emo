@@ -28,7 +28,11 @@
   
 function understand(arr) {
 var words = arr.split(" ")
+if (words.length == 1) {
+  var sent = arr;
+} else {
 var sent = ""
+}
 for (var i = 0; i < words.length; i++) {
   if (i == words.length - 1) {
   document.getElementById('messages').innerHTML += "<span class='emo'>"+sent+"</span>";
