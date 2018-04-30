@@ -9,19 +9,13 @@
   }
   
   var vocab = {
-    hi: "friendlygreeting",
-    hello: 'friendlygreeting',
-    calculator: "noun"
+    hi: ["greeting", 'friendly'],
+    hello: ['greeting', 'friendly'],
 }
   
 function understand(arr) {
 var words = arr.split(" ")
-var sents = ''
 for (var i = 0; i < words.length; i++) {
-  if (i == words.length - 1) {
-    alert(sents)
-    return true;
-  }
   if (vocab[words[i]] !== undefined) {
   sents += vocab[words[i]] + ' ';
   } else {
