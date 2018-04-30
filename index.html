@@ -35,7 +35,7 @@ var sent = ""
 }
 for (var i = 0; i < words.length; i++) {
   if (i == words.length - 1) {
-  document.getElementById('messages').innerHTML += "<span class='emo'>"+sent+"</span><br><br><br>";
+  document.getElementById('messages').innerHTML += "<span class='you'>"+sent+"</span><br><br><br>";
   } else {
   if (vocab[words[i]] !== undefined) {
     sent += vocab[words[i]];
