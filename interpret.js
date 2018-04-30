@@ -1,3 +1,10 @@
+var vocab = {
+"hi": "friendlygreeting"
+"hello": "friendlygreeting"
+"calculator": "noun"
+}
+
+
 function understand(arr) {
 words = arr.split(" ")
 for (var i = 0; i < words.length; i++) {
@@ -6,10 +13,5 @@ for (var i = 0; i < words.length; i++) {
   } else {
     alert(words[i])
   }
-}
-
-var vocab = {
-"hi": "friendlygreeting"
-"hello": "friendlygreeting"
-"calculator": "noun"
+ }
 }
