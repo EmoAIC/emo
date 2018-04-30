@@ -15,18 +15,13 @@
     hello_syn: 'hi',
     calculator: "noun"
 }
-
-
-function getKeyByValue(object, value) {
-  return Object.keys(object).find(key => object[key] === value);
-}
   
 function understand(arr) {
 var words = arr.split(" ")
 alert(words)
 for (var i = 0; i < words.length; i++) {
   if (vocab[words[i]] !== undefined) {
-  alert(vocab[vocab[words[i]]+"_syn"])
+  alert(vocab[words[i]+"_syn"])
   } else {
     alert(words[i])
   }
