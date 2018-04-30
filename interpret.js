@@ -6,10 +6,10 @@ var vocab = {
 
 
 function understand(arr) {
-words = arr.split(" ")
+var words = arr.split(" ")
 for (var i = 0; i < words.length; i++) {
-  if (vocab[words[i]] !== undefined) {
-  alert(vocab[words[i]])
+  if (vocab.words[i] !== undefined) {
+  alert(vocab.words[i])
   } else {
     alert(words[i])
   }
